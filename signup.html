@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    
+ 
+
+    .signupproc {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    input {
+      width: 95%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 10px;
+      background: #1976d2;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+    
+    
+<section class="signupproc">
+  <h1>Create Account</h1>
+  <form method="post" action="/signup">
+    <p>
+      Enter name:
+      <input type="text" name="username" placeholder="xyz" required>
+    </p>
+    <p>
+      Enter mail:
+      <input type="email" name="usermail" placeholder="xyz@gmail.com" required>
+    </p>
+    <p>
+      Enter password:
+      <input type="password" name="password" placeholder="*******" required>
+    </p>
+    <p>
+      Enter mobile no.:
+      <input type="text" name="mobileno" placeholder="91+" required>
+    </p>
+    <button type="submit" class="btn">Create Account</button>
+  </form>
+
+  <p style="text-align:center; margin-top:10px;">
+    Already have an account? <a href="login.html">Login</a>
+  </p>
+</section>
+<footer>
+  <p>© 2025 MyLibrary | All Rights Reserved</p>
+</footer>
+</body>
+</html>
